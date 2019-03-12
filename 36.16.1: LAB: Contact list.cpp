@@ -4,7 +4,11 @@ using namespace std;
 
 //search function
 string GetPhoneNumber(vector<string> nameVec, vector<string> phoneNumberVec, string contactName){
-   //todo
+   for(int i = 0; i < nameVec.size(); i++){
+      if(nameVec.at(i) == contactName)
+         return phoneNumberVec.at(i);
+   }
+   return "not found";
 }
 
 int main() {
