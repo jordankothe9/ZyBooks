@@ -13,15 +13,16 @@ string GetPhoneNumber(vector<string> nameVec, vector<string> phoneNumberVec, str
 
 int main() {
    //initalize vars
-   vector<string> nameVec;
-   vector<string> phoneNumberVec;
-   int length
+   std::vector<string> nameVec;
+   std::vector<string> phoneNumberVec;
+   int length;
    string contactName;
    
    //get user data starting with number of entries followed by name, phone, name, phone etc
    scanf("%d", &length);
    for(int i = 0; i < length; i++){
-      scanf("%s %s", &nameVec.at(i), &phoneNumberVec.at(i);
+      scanf("%s", &nameVec.at(i));
+      scanf("%s", &phoneNumberVec.at(i));
    }
    
    //call search function and print phone number
