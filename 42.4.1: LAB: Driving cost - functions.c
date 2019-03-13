@@ -2,10 +2,10 @@
 
 //Driving cost: miles * (gals/miles) * ( $ / gals ) = dollars
 
-//cost per mile ($ /miles) = gals/mile.........
+//cost per mile ($ /miles) = gals/mile * dollarsPerGallon
 
 double DrivingCost(double drivenMiles, double mpg, double dollarsPerGallon){
-   return drivenMiles * mpg * dollarsPerGallon;
+   return (drivenMiles * mpg * dollarsPerGallon)/drivenMiles;
 }
 
 int main(void) {
