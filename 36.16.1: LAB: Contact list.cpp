@@ -4,7 +4,8 @@ using namespace std;
 
 //search function
 string GetPhoneNumber(vector<string> nameVec, vector<string> phoneNumberVec, string contactName){
-   for(int i = 0; i < nameVec.size(); i++){
+   int size = nameVec.size();
+   for(int i = 0; i < size; i++){
       if(nameVec.at(i) == contactName)
          return phoneNumberVec.at(i);
    }
@@ -21,13 +22,13 @@ int main() {
    //get user data starting with number of entries followed by name, phone, name, phone etc
    scanf("%d", &length);
    for(int i = 0; i < length; i++){
-      scanf("%s", &nameVec.at(i));
-      scanf("%s", &phoneNumberVec.at(i));
+      cin >> nameVec.at(i);
+      cin >> phoneNumberVec.at(i);
    }
    
    //call search function and print phone number
-   scanf("%s", contactName);
-   printf(GetPhoneNumber(contactName));
+   cin >> contactName;
+   cout << GetPhoneNumber(nameVec, phoneNumberVec, contactName);
 
    return 0;
 }
