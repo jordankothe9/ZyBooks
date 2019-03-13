@@ -20,7 +20,24 @@ int GetFrequencyOfWord(vector<string> wordsList, string currWord){
 
 
 int main() {
-   /* Type your code here */
+   vector<string> wordsList;
+   vector<int> counts;
+   int size;
+   
+   cin >> size;
+   for(int i = 0; i < size; i++){
+      string recentString;
+      cin >> recentString;
+      wordsList.push_back(recentString);
+   }
+   
+   for(int i = 0; i < size; i++){
+      counts.push_back(GetFrequencyOfWord(wordsList, wordsList.at(i));
+   }
+   
+   for(int i = 0; i < size; i++){
+      cout << wordsList.at(i) << " " << counts.at(i) << endl;
+   }
 
    return 0;
 }
