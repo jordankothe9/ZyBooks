@@ -19,11 +19,17 @@ int main() {
    int length;
    string contactName;
    
+   
    //get user data starting with number of entries followed by name, phone, name, phone etc
    scanf("%d", &length);
    for(int i = 0; i < length; i++){
-      cin >> nameVec.at(i);
-      cin >> phoneNumberVec.at(i);
+      string name;
+      cin >> name;
+      nameVec.push_back(name);
+      
+      string number;
+      cin >> number;
+      phoneNumberVec.push_back(number);
    }
    
    //call search function and print phone number
