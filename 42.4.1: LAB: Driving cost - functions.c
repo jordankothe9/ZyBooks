@@ -20,9 +20,9 @@ int main(void) {
    
    //outputs should include: 10 miles, 50 miles, and 400 miles
    
-   printf(DrivingCost(10.0, mpg, dollarsPerGallon));
-   printf(DrivingCost(50.0, mpg, dollarsPerGallon));
-   printf(DrivingCost(400.0, mpg, dollarsPerGallon));
+   printf("%lf ", DrivingCost(10.0, mpg, dollarsPerGallon));
+   printf("%lf ", DrivingCost(50.0, mpg, dollarsPerGallon));
+   printf("%lf ", DrivingCost(400.0, mpg, dollarsPerGallon));
 
    return 0;
 }
