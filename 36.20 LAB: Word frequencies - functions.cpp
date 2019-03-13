@@ -4,13 +4,13 @@
 using namespace std;
 
 int GetFrequencyOfWord(vector<string> wordsList, string currWord){
-   int size = vector.size();
+   int size = wordsList.size();
    //keep track of occurances of word
    int count = 0;
    
    //search through vector for matches adding to count for each match
    for(int i = 0; i < size; i++){
-      if(currWord == vector.at(i))
+      if(currWord == wordsList.at(i))
          count++;
    }
    
@@ -32,7 +32,7 @@ int main() {
    }
    
    for(int i = 0; i < size; i++){
-      counts.push_back(GetFrequencyOfWord(wordsList, wordsList.at(i));
+      counts.push_back(GetFrequencyOfWord(wordsList, wordsList.at(i)));
    }
    
    for(int i = 0; i < size; i++){
