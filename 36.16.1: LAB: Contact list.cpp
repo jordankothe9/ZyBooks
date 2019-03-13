@@ -34,7 +34,7 @@ int main() {
    
    //call search function and print phone number
    cin >> contactName;
-   cout << GetPhoneNumber(nameVec, phoneNumberVec, contactName);
+   cout << GetPhoneNumber(nameVec, phoneNumberVec, contactName) << endl;
 
    return 0;
 }
