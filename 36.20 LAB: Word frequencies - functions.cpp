@@ -24,6 +24,7 @@ int main() {
    vector<int> counts;
    int size;
    
+   //input the number of words and the words themselves
    cin >> size;
    for(int i = 0; i < size; i++){
       string recentString;
@@ -31,10 +32,12 @@ int main() {
       wordsList.push_back(recentString);
    }
    
+   //populate the count vector with the frequency of each word
    for(int i = 0; i < size; i++){
       counts.push_back(GetFrequencyOfWord(wordsList, wordsList.at(i)));
    }
    
+   //output the results
    for(int i = 0; i < size; i++){
       cout << wordsList.at(i) << " " << counts.at(i) << endl;
    }
