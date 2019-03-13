@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-//Driving cost: miles * (gals/miles) * ( $ / gals ) = dollars
 
-//cost per mile ($ /miles) = gals/mile * dollarsPerGallon
-
+//calc driving cost and return as double
 double DrivingCost(double drivenMiles, double mpg, double dollarsPerGallon){
-   return (drivenMiles * mpg * dollarsPerGallon)/drivenMiles;
+   return drivenMiles/mpg*dollarsPerGallon;
 }
 
 int main(void) {
@@ -22,7 +20,7 @@ int main(void) {
    
    printf("%lf ", DrivingCost(10.0, mpg, dollarsPerGallon));
    printf("%lf ", DrivingCost(50.0, mpg, dollarsPerGallon));
-   printf("%lf ", DrivingCost(400.0, mpg, dollarsPerGallon));
+   printf("%lf\n", DrivingCost(400.0, mpg, dollarsPerGallon));
 
    return 0;
 }
