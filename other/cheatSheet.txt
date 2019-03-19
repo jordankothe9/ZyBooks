@@ -1,0 +1,67 @@
+C/C++ cheat sheet
+
+
+C+++++++++++++++++++++++++++++++++++++
+#include <iostream>
+using namespace std;
+int main() 
+{
+    //code here
+    return 0;
+}
+
+
+C++ compile:
+sudo g++ -o hello hello.cpp
+g++ -o <outputname> <sourceFile>
+
+C++ printing:
+#include<iostream>
+cin >> inputVar;
+cout << "string" << 1 << ", " << 2 << endl;
+
+#include<cmath>
+
+//C++ only
+#include <vector>
+vector<int> nums(5); //creates a vector array named nums with 5 elements
+nums.at(3) = 7; //sets the 4th element to 7
+int x = nums.size();
+nums.resize(10); //resizes the array, the best way to do this is to double the size of the array
+vector<int> nums; //nums has no size
+nums.push_back(8); //adds 8 to the end or the "back" of the array
+vector<int> nums2; nums2 = nums; //deep copies array
+
+#include<string>
+#include<cstring> //for outdated, legacy code
+strcpy(dest, source);
+strlen(src); //string length
+int strcmp(s1, s2) //returns 0 if same.
+
+
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+#include <stdio.h>
+int main()
+{
+   //code here
+   return 0;
+}
+
+C printing:
+#include <stdio.h>
+gets() - reads line from keyboard
+scanf() read a character, string or number
+printf("%d", &x);
+
+#include<math.h>
+floor() - round down
+round() - rounds to the nearest int
+ceil() - round up to nearest int
+exp() - raise to the e power
+
+
+ C compile:
+ gcc -o <outputname> <sourceFile>
+ gcc -o hello hello.c
