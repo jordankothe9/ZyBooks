@@ -92,6 +92,9 @@ int main(void) {
    // Erase 200 then insert 100 and 102
 
    /* Your solution goes here  */
+  vector_erase(&numberList, 1);
+  vector_insert(&numberList, 0, 100);
+  vector_insert(&numberList, 2, 102);
 
    PrintVectors(&numberList);
 
