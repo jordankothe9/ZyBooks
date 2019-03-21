@@ -19,6 +19,8 @@ int main(void) {
    groceryPtr = (bagContents*)malloc(sizeof(bagContents));
 
    /* Your solution goes here  */
+   groceryPtr -> numApples = 10;
+   groceryPtr -> numOranges = 3;
 
    bagContents_PrintBag(groceryPtr);
 
