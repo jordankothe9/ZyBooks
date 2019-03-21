@@ -1,6 +1,11 @@
 #include <stdio.h>
 
-// Define void UpdateTimeWindow(...)
+void UpdateTimeWindow(int* timeStart, int* timeEnd, int offsetAmount){
+   *timeStart += offsetAmount;
+   *timeEnd += offsetAmount;
+      
+   return;  
+}
 
 /* Your solution goes here  */
 
