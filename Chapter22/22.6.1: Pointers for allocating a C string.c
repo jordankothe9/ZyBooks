@@ -9,6 +9,7 @@ int main(void) {
    strcpy(userStr, "Hello friend!");
 
    /* Your solution goes here  */
+   newStr = malloc(strlen(userStr));
 
    strcpy(newStr, userStr);
    printf("%s\n", newStr);
