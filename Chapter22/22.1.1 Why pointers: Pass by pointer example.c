@@ -12,8 +12,7 @@ int main(void) {
 
    userInt = 41;
 
-   /* Your solution goes here  */
-
+   SplitIntoTensOnes(&tensPlace, &onesPlace, userInt);
    printf("tensPlace = %d, onesPlace = %d\n", tensPlace, onesPlace);
 
    return 0;
