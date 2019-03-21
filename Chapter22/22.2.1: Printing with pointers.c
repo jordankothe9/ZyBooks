@@ -6,7 +6,8 @@ int main(void) {
 
    numItems = 99;
 
-   /* Your solution goes here  */
+   numItemsPtr = &numItems;
+   printf("Items: %d\n", *numItemsPtr);
 
    return 0;
 }
