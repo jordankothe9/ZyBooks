@@ -5,8 +5,9 @@ int main(void) {
    int* numPtr1 = NULL;
    int* numPtr2 = NULL;
 
-   /* Your solution goes here  */
-
+   numPtr1 = malloc(sizeof(int));
+   numPtr2 = malloc(sizeof(int));
+   
    *numPtr1 = 44;
    *numPtr2 = 99;
 
