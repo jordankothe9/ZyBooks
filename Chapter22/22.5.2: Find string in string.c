@@ -6,6 +6,7 @@ int main(void) {
    char* movieResult = NULL;
 
    /* Your solution goes here  */
+   movieResult = strstr(movieTitle, "The");
 
    printf("Movie title contains The? ");
    if (movieResult != NULL) {
