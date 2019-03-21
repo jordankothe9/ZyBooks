@@ -9,7 +9,8 @@ int main(void) {
    searchChar = 'J';
 
    /* Your solution goes here  */
-
+   searchResult = strchr(personName, searchChar);
+   
    if (searchResult != NULL) {
       printf("Character found.\n");
    }
