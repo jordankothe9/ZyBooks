@@ -64,6 +64,10 @@ int main(void) {
    while (currObj != NULL) {
 
       /* Your solution goes here  */
+      if(currObj->dataVal < 0){
+         negativeCntr++;
+      }
+      
 
       currObj = IntNode_GetNext(currObj);
    }
